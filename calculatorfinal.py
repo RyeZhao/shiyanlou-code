@@ -46,7 +46,7 @@ def calculator(num):
     else:
         tax = shouldPay * 0.45-15160
     # 最终收入为税前收入减去税款，并保留两位小数
-    salary=format(num-tax,'.2f')
+    salary=format(0.835*num-tax,'.2f')
     # 返回最终收入
     return salary
 
