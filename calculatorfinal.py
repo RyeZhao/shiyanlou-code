@@ -1,3 +1,9 @@
+#下面是要求
+#1 程序存放的位置 /home/shiyanlou/calculator.py
+#2 程序可以处理 1 个及多个员工工资计算，输出的内容为 1 行或多行，每行内容必须为 工号:税后工资
+#3 程序返回的税后工资数字保留两位小数，如果是整数，仍然需要保留xxx.00 这种形式
+#4 如果参数数量不准确或者无法转成整数，需要打印 '请在薪资的位置输入数字' 。
+
 import sys
 
 ## 定义下面的变量
@@ -40,7 +46,7 @@ def calculator(num):
     else:
         tax = shouldPay * 0.45-15160
     # 最终收入为税前收入减去税款，并保留两位小数
-    salary=format(num-tax,'.2f')
+    salary=format(0.835*num-tax,'.2f')
     # 返回最终收入
     return salary
 
