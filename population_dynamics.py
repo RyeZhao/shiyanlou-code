@@ -1,8 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-
-# 查找系统中可用的字体
-from matplotlib import font_manager
+from matplotlib import font_manager  # 查找系统中可用的字体
 
 # 设置字体，假设已经安装了 SimHei 字体
 plt.rcParams['font.sans-serif'] = ['SimHei']  # 指定默认字体
